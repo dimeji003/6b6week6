@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+
+    </ul>
+</body>
+<script>
+    let F6B6 = 'korede sylvester joseph joba dimeji omolade ore daniel victor tolu munir chuinwike shola ismail'
+
+    const students = F6B6.split(' ')
+    const ul = document.querySelector('ul')
+    const old = ['ini' , 'michael']
+
+    students.push('wakil')
+    students.push(...old)
+    students.pop()
+    students.shift()
+    students.unshift('james')
+    students[6] = 'oreoluwa'
+    students.splice(8, 0, 'korede')
+    students.splice(10, 2)
+    students.splice(students.indexOf('james'), 2 , 'tolu' , 'munir')
+
+    const five = students.slice()
+
+    function cap(str){
+        str=str.toLowerCase()
+        str= str.replace(str[0], str[0].toUpperCase())
+        return str
+    }
+    const six = five.map(cap)
+
+    const startO = six.filter(name => name[0] === 'o')
+
+    
+    
+    for(let student of six){
+        const list = document.createElement('li')
+        ul.append(list)
+        list.textContent = student
+    }
+
+
+    console.log(student.toUpperCase())
+    
+</script>
+</html>

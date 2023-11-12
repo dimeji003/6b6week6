@@ -21,14 +21,17 @@
 
     
     function changeColor(){
-        let color = input.value
+        let color = input.value.toLowerCase()
+        let bcolor
+
+        color == "red" ?  bcolor= 'red' :
+        color == "blue" ? bcolor= 'blue' :
+        color == 'green'? bcolor= 'green' : (input.value= "invalid")
         
 
-        return colorbx.style.background = color
+        return colorbx.style.background = bcolor
     }
     
-    input = "red" ? color = 'red' :
-    input= "blue" ? color= 'blue' :
-    input = 'green' ? color= 'green' : color.textContent= "invalid"
+    
 </script>
 </html>
