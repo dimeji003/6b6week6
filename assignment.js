@@ -1,0 +1,72 @@
+let arr = [2,3,7,23,9,4,675,8,0,-1,8,45,-69,30,55]
+    const reverse = arr.reverse()
+    console.log(`reverse array = ${reverse}`)
+   
+
+    const max= Math.max(...arr)
+    
+    const min= Math.min(...arr)
+   
+
+    function maxmin(arr){
+        let min = arr[0]
+        let max = arr[0]
+        for (let i = 1; i < arr.length; i++){
+        if (arr[i] < min){
+            min = arr[i]
+        } else if (arr[i] > max) {
+            max = arr[i]
+        }
+    }
+    return {min, max}
+        
+    }
+
+    function odd(arr){
+
+        return arr.filter(num => num % 2 === 1)
+    }
+
+    const result = odd(arr)
+    console.log(`odd numbers are ${result}`)
+
+    function positiveNo (arr){
+        return arr.reduce((acc, num) => {
+            if (num > 0) {
+                return acc + num
+            }
+            return acc
+        }, 0)
+    }
+
+    const positiveSum = positiveNo(arr)
+    console.log(`sum of positive numbers is ${positiveSum}`)
+    
+    function removeDuplicates(array){
+        return Array.from(new Set(array))
+    }
+
+    let array = [2,2,3,75,5,2,12,12,4,3,18,3,21]
+    const uniqueVal = removeDuplicates(array)
+    console.log(`Unique Values are = ${uniqueVal}`)
+
+    function flattenArray(nestedArray){
+        return nestedArray.flat (Infinity)
+           
+    }
+    const nestedArray = [1, [2, 3], [4, [5, 6]]]
+    const flattened = flattenArray(nestedArray)
+
+    arr1 = [1,3,4,6,7,2]
+    arr2 = [8,9,10,11,13,20]
+    console.log(`flattened array = ${flattened}`)
+
+
+
+    
+    function merge(arr1, arr2){
+        return arr11.concat(arr2)
+
+    }
+    const mergedArray = [...arr1, ...arr2]
+    console.log(`mergedArray = ${mergedArray}`)
