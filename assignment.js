@@ -57,15 +57,15 @@ let arr = [2,3,7,23,9,4,675,8,0,-1,8,45,-69,30,55]
     const nestedArray = [1, [2, 3], [4, [5, 6]]]
     const flattened = flattenArray(nestedArray)
 
-    arr1 = [1,3,4,6,7,2]
-    arr2 = [8,9,10,11,13,20]
     console.log(`flattened array = ${flattened}`)
-
-
-
+    
+    
+    
+    const arr1 = [1,3,4,6,7,2]
+    const arr2 = [8,9,10,11,13,20]
     
     function merge(arr1, arr2){
-        return arr11.concat(arr2)
+        return arr1.concat(arr2)
 
     }
     const mergedArray = [...arr1, ...arr2]
